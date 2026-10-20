@@ -22,17 +22,17 @@ header {
 	}
 
 .nav-a a { 
-	font-size: 16px; text-decoration: none; padding: 20px; font-size: 20px;
+	font-size: 16px; text-decoration: none; padding: 20px; font-size: 25px;
 	font-family:'myFont',sans-serif; transition: font-size 0.3s ease;}
-.nav-a a:hover{ font-size: 25px;}
+.nav-a a:hover{ font-size: 27px;}
 
 .nav-a {
 	display: flex; gap: 70px; margin-bottom: 15px;
 	}
 
 /* Main css */
-.container { width: 80%; margin: 0 auto;}
-.container h2 { text-align: center; font-size: 35px;}
+.main-container { width: 80%; margin: 0 auto; display: flex; text-align: center; justify-content: center;}
+.topTitle { text-align: center; font-size: 35px; margin-bottom: 50px;}
 .B-product-List { /**/
 	display: flex !important;/*강제가로정렬적용*/ gap: 20px; overflow-x: auto;/*화면밖으로 넘어가면 스크롤바 생기도록*/
 	padding: 10px 5px 20px 5px; scroll-behaviro: smoth; /*부드럽게 스크롤되도록*/ 
@@ -69,3 +69,20 @@ header {
 }
 .PL-card {transition: transform 0.2s;}
 .PL-card:hover { transform: translateY(-5px);}
+
+/*detail css*/
+.detail-container { margin-left: 20vw;}
+.dTop-box {
+	display: flex; gap:40px; margin-width: 900px; margin-top:10px;
+	margin: 40px auto;	justify-content: flex-start; gap: 10vw;
+}
+
+.dTop-box img { width: 500px; height: auto; object-fit: cover; }
+.detail-info { display: flex; flex-direction: column; gap: 15px; font-size: 30px;}
+.detail-title{ font-size: 30px;}
+.Dquantity-box {margin-bottom: 20px; }
+.Dquantity-box input { width: 50px;  text-align: center; padding: 5px; border: 1px solid silver; border-radius: 5px; }
+.Dquantity-box button { width: 30px; padding: 5px; border: 1px solid silver; border-radius: 5px; background-color:white;} 
+.addCart, .addOder {width: 150px; padding: 10px; border: 1px solid silver; margin-top: 30px;}
+.info-th { width: 200px; padding: 50px;}
+.info-td { max-width: 600px; word-break: keep-all; overfow-wrap: break-word;}
